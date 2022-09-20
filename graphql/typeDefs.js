@@ -1,4 +1,4 @@
-const { gql } = require('apollo-server');
+const { gql } = require("apollo-server");
 
 module.exports = gql`
   type Post {
@@ -35,6 +35,7 @@ module.exports = gql`
     confirmPassword: String!
     email: String!
   }
+
   type Query {
     getPosts: [Post]
     getPost(postId: ID!): Post
